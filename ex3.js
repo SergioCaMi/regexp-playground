@@ -11,7 +11,7 @@
 
 function validatePIN(pin) {
     //return true or false
-    return /^cambiar$/.test(pin);
+    return /^[0-9]{4}([0-9]{2})?$/.test(pin);
 
 }
 
@@ -46,3 +46,10 @@ console.log(validatePIN("1234a")); // false
 // Explicación: "12@4" contiene caracteres especiales además de dígitos, por lo tanto, no es un PIN válido
 // Resultado esperado: false
 console.log(validatePIN("12@4")); // false
+
+// T
+// T
+// F
+// F
+// F
+// F

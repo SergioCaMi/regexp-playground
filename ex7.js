@@ -10,8 +10,8 @@
  * @returns string Retorna true si s2 está contenido en s1. En caso contrario retorna false
  */
 function isSubstring(s1, s2) {
-
-}
+    const regex = new RegExp(s2);
+    return s1.search(regex) !== -1;}
 
 // Prueba 1: Substring presente en la cadena principal
 // Explicación: "world" es un substring de "Hello, world!"

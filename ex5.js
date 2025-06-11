@@ -9,6 +9,8 @@
 
 function extractHexColors(s) {
     /** Modifica solamente el cuerpo de la función */
+    const expression = /#[A-Fa-f0-9]{6}/g;
+    return s.match(expression)||[];
 }
 
 // Juegos de pruebas
